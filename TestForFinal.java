@@ -143,7 +143,7 @@ public class TestForFinal {
 	}
 
 
-	//   PART B 
+	//   PART B Ibrahim Ntale
 	public void DanceBooking() {
 
 
@@ -436,6 +436,7 @@ public void displayAllRegistrations() {
 
 	}
 }
+
 
 
 
