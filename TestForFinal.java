@@ -223,16 +223,16 @@ public class TestForFinal {
 				}
 
 				//  only positive whole numbers
-				boolean qtyIsNum = true;
+				boolean k= true;
 
 				for (int x = 0; x < qtyInput.length(); x++) {
 					if (!Character.isDigit(qtyInput.charAt(x))) {
-						qtyIsNum = false;
+						k = false;
 						break;
 					}
 				}
 
-				if (qtyIsNum) {
+				if (k) {
 					updatedvalue[styleIndex] = Integer.parseInt(qtyInput);
 					break;
 				} else {
@@ -436,6 +436,7 @@ public void displayAllRegistrations() {
 
 	}
 }
+
 
 
 
