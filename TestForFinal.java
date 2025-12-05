@@ -323,7 +323,7 @@ public class TestForFinal {
   
     if(registrationTracker == 0) {
     	System.out.println("Registration number could not be found. There is nothing to delete");
-    	System.out.println("You will now return to main menu.");
+    	System.out.println("You will now return to Mirabel's dance studio's main menu.");
     	return;    
     }
     
@@ -334,18 +334,18 @@ public class TestForFinal {
     
     //search for registration number in the array
     boolean findRegistration = false;
-    int indexDelete =-1;
+    int registrationDelete =-1;
     for (int i = 0; i < registrationTracker; i++) {
     	if(registrationNum == i + 1) {
     		findRegistration =true;
-    		indexDelete =i;
+    		registrationDelete = i;
     		break;
     	}		
     }		
     
     if (!findRegistration) {
     	System.out.println("Registration number has not been found.");
-        System.out.println("You will now return to main menu.");
+        System.out.println("You will now return to Mirabel's dance studio's main menu.");
     return;
     }
     
@@ -436,6 +436,7 @@ public void displayAllRegistrations() {
 
 	}
 }
+
 
 
 
