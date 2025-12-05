@@ -368,7 +368,7 @@ public class TestForFinal {
     		    		
     		if (confirmation ==2) {
     			System.out.println("You have confirmed cancellation of deleting registration number.");
-    			System.out.println("You will now return to main menu.");
+    			System.out.println("You will now return to Mirabel's dance studio's main menu.");
     			return;
     		}
     		
@@ -383,7 +383,7 @@ public class TestForFinal {
     			
 	    			registrationTracker--;
 	    			System.out.println("Your registeration number has successfully been deleted");
-		    		System.out.println("You will now return to the main menu.");
+		    		System.out.println("You will now return to Mirabel's dance studio's main menu.");
 		    
     }	    			
 
@@ -436,6 +436,7 @@ public void displayAllRegistrations() {
 
 	}
 }
+
 
 
 
