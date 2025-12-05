@@ -143,24 +143,24 @@ public class TestForFinal {
 	}
 
 
-	//   PART B 
+	//   PART B Ibrahim Ntale
 	public void DanceBooking() {
 
 
 
-		//  6.1
+		// this to check if any of the registrations exists
 		if (registrationTracker == 0) {
 			System.out.println(" there are currently No registrations");
 			return;
 		}
 
-		//  6.2
+		//  display the existing registrations
 		System.out.println("bellow are the current registrations");
 		for (int slots = 0; slots < registrationTracker; slots++) {
 			System.out.println("||"+ (slots + 1) + "|| Registration slot");
 		}
 
-		//  6.3
+		// if the said number is found display results if not show an error 
 		int RegistrationNumber = -1;
 		boolean Selection = false;
 
@@ -169,7 +169,7 @@ public class TestForFinal {
 			String registration = input.nextLine();
 
 
-			//  6.5
+			// validate the new number
 			boolean validation = true;
 			for (int c = 0; c < registration.length(); c++) {
 				if (!Character.isDigit(registration.charAt(c))) {
@@ -182,7 +182,7 @@ public class TestForFinal {
 				RegistrationNumber = Integer.parseInt(registration);
 
 
-				//  Check if registration exists
+				// check if the registration is valid
 				if (RegistrationNumber >= 1 && RegistrationNumber <= registrationTracker) {
 					Selection = true;
 				} else {
@@ -196,7 +196,7 @@ public class TestForFinal {
 
 		int chosenvalue = RegistrationNumber - 1;
 
-		// 6.4
+		// display previous registration and previous total
 		System.out.println("\nEditing Registration number" + RegistrationNumber);
 
 		double PreviousTotal = 0;
@@ -207,7 +207,7 @@ public class TestForFinal {
 		}
 		System.out.printf("Old Total: RM%.2f%n", PreviousTotal);
 
-		// Enter new quantities 
+		// Enter new quantities or keep the previous ones
 		int[] updatedvalue = new int[5];
 
 		for (int styleIndex = 0; styleIndex < 5; styleIndex++) {
@@ -216,23 +216,23 @@ public class TestForFinal {
 				System.out.print("New entry for " + Danceclass[styleIndex] + "(empty to leave unchanged) ");
 				String qtyInput = input.nextLine();
 
-				// keep old if empty
+				// keep previous if empty
 				if (qtyInput.equals("")) {
 					updatedvalue[styleIndex] = registrations[chosenvalue][styleIndex];
 					break;
 				}
 
-				//  only positive numbers
-				boolean qtyIsNum = true;
+				//  only positive whole numbers
+				boolean k= true;
 
 				for (int x = 0; x < qtyInput.length(); x++) {
 					if (!Character.isDigit(qtyInput.charAt(x))) {
-						qtyIsNum = false;
+						k = false;
 						break;
 					}
 				}
 
-				if (qtyIsNum) {
+				if (k) {
 					updatedvalue[styleIndex] = Integer.parseInt(qtyInput);
 					break;
 				} else {
@@ -241,14 +241,14 @@ public class TestForFinal {
 			}
 		}
 
-		// 6.5
+		//calculate new total
 		double newTotal = 0;
 		for (int styleIndex = 0; styleIndex < 5; styleIndex++) {
 			newTotal += updatedvalue[styleIndex] * Fees[styleIndex];
 		}
 		System.out.printf("New Total: RM%.2f%n", newTotal);
 
-		// 6.6
+		
 		if (newTotal > PreviousTotal) {
 
 			double extraPayment = newTotal - PreviousTotal;
@@ -293,15 +293,15 @@ public class TestForFinal {
 				}
 			}
 
-			// (ii)
+		
 		} else if (newTotal < PreviousTotal) {
 			System.out.println("No refund provided.");
-			// (iii)
+		
 		} else {
 			System.out.println("Total unchanged.");
 		}
 
-		// 6.7
+		// update new registration values
 		for (int styleIndex = 0; styleIndex < 5; styleIndex++) {
 			registrations[chosenvalue][styleIndex] = updatedvalue[styleIndex];
 		}
@@ -312,6 +312,10 @@ public class TestForFinal {
 
 	
 	// Deleting orders Ronah Katebe 25050105
+
+
+	
+	// Deleting orders Ronah Kateb
     
     public void deleteRegistration() {
       
