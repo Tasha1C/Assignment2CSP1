@@ -342,7 +342,7 @@ public class TestForFinal {
     		break;
     	}		
     }		
-    
+      //display return to main menu if registration is not found
     if (!findRegistration) {
     	System.out.println("Registration number has not been found.");
         System.out.println("You will now return to Mirabel's dance studio's main menu.");
@@ -357,7 +357,7 @@ public class TestForFinal {
     		System.out.println("2. Enter (2) to keep registration number");
     		int userVerify = input.nextInt();
     		
-    		//confirm user's choice
+    		//confirm user's choice to ensure user only input 1 or 2 as choice
     		if(userVerify ==1 || userVerify ==2) {
     			confirmation = userVerify;
     		}
@@ -365,7 +365,7 @@ public class TestForFinal {
     			System.out.println("You have entered an invalid input. Please enter 1 or 2.");
     		}
     	}	
-    		    		
+    		    	//display confirmation message and return to main menu	
     		if (confirmation ==2) {
     			System.out.println("You have confirmed cancellation of deleting registration number.");
     			System.out.println("You will now return to Mirabel's dance studio's main menu.");
@@ -380,7 +380,7 @@ public class TestForFinal {
     			for(int j=0; j < registrations[0].length; j++) {
     				registrations[registrationTracker -1][j] =0;
     			}
-    			
+    			  //update programs counter everytime user deletes registratiom // reduce by 1
 	    			registrationTracker--;
 	    			System.out.println("Your registeration number has successfully been deleted");
 		    		System.out.println("You will now return to Mirabel's dance studio's main menu.");
@@ -436,6 +436,7 @@ public void displayAllRegistrations() {
 
 	}
 }
+
 
 
 
