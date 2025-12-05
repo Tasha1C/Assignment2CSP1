@@ -313,7 +313,7 @@ public class TestForFinal {
 
 
 	
-	// Deleting orders Ronah Katebe
+	// Deleting orders Ronah Katebe 25050105
     
     public void deleteRegistration() {
       
@@ -436,6 +436,7 @@ public void displayAllRegistrations() {
 
 	}
 }
+
 
 
 
