@@ -309,12 +309,12 @@ public class TestForFinal {
 		System.out.println("Registration updated successfully.");
 	}
 
-	// Deleting orders Ronah Katebe
+
+	
+	// Deleting orders Ronah Katebe 25050105
     
     public void deleteRegistration() {
       
-        
-    
 	//checking for existing orders
   
     if(registrationTracker == 0) {
@@ -330,11 +330,11 @@ public class TestForFinal {
     
     //search for registration number in the array
     boolean findRegistration = false;
-    int indexDelete =-1;
+    int registrationDelete =-1;
     for (int i = 0; i < registrationTracker; i++) {
     	if(registrationNum == i + 1) {
     		findRegistration =true;
-    		indexDelete =i;
+    		registrationDelete = i ;
     		break;
     	}		
     }		
@@ -364,7 +364,7 @@ public class TestForFinal {
     		    		
     		if (confirmation ==2) {
     			System.out.println("You have confirmed cancellation of deleting registration number.");
-    			System.out.println("You will now return to main menu.");
+    			System.out.println("You will now return to Mirabel's dance studio's main menu.");
     			return;
     		}
     		
@@ -379,7 +379,7 @@ public class TestForFinal {
     			
 	    			registrationTracker--;
 	    			System.out.println("Your registeration number has successfully been deleted");
-		    		System.out.println("You will now return to the main menu.");
+		    		System.out.println("You will now return to the Mirabel's dance studio's main menu.");
 		    
     }	    			
 
@@ -392,8 +392,8 @@ public void displayAllRegistrations() {
         return;
     }
   //display listing
-    
-    System.out.println("  ||below is the registration list for Mirabell Dance Studio|| ");
+    System.out.println("Welcome to Mirabell Dance Studio! <3");
+    System.out.println(" <3   ||below is the registration list for Mirabell Dance Studio! <3  || ");
     System.out.println("Registration number");
    
     for (int m = 0; m <5; m++) {
@@ -432,6 +432,7 @@ public void displayAllRegistrations() {
 
 	}
 }
+
 
 
 
