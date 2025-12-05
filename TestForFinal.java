@@ -323,7 +323,7 @@ public class TestForFinal {
   
     if(registrationTracker == 0) {
     	System.out.println("Registration number could not be found. There is nothing to delete");
-    	System.out.println("You will now return to Mirabel's dance studio's main menu.");
+    	System.out.println("You will now return to Mirabell's dance studio's main menu.");
     	return;    
     }
     
@@ -345,7 +345,7 @@ public class TestForFinal {
       //display return to main menu if registration is not found
     if (!findRegistration) {
     	System.out.println("Registration number has not been found.");
-        System.out.println("You will now return to Mirabel's dance studio's main menu.");
+        System.out.println("You will now return to Mirabell's dance studio's main menu.");
     return;
     }
     
@@ -368,7 +368,7 @@ public class TestForFinal {
     		    	//display confirmation message and return to main menu	
     		if (confirmation ==2) {
     			System.out.println("You have confirmed cancellation of deleting registration number.");
-    			System.out.println("You will now return to Mirabel's dance studio's main menu.");
+    			System.out.println("You will now return to Mirabell's dance studio's main menu.");
     			return;
     		}
     		
@@ -383,7 +383,7 @@ public class TestForFinal {
     			  //update programs counter everytime user deletes registratiom // reduce by 1
 	    			registrationTracker--;
 	    			System.out.println("Your registeration number has successfully been deleted");
-		    		System.out.println("You will now return to Mirabel's dance studio's main menu.");
+		    		System.out.println("You will now return to Mirabell's dance studio's main menu.");
 		    
     }	    			
 
@@ -397,7 +397,7 @@ public void displayAllRegistrations() {
     }
   //display listing
     
-    System.out.println("  ||below is the registration list for Mirabell Dance Studio|| ");
+    System.out.println("  ||below is the registration list for Mirabell's Dance Studio|| ");
     System.out.println("Registration number");
    
     for (int m = 0; m <5; m++) {
@@ -436,6 +436,7 @@ public void displayAllRegistrations() {
 
 	}
 }
+
 
 
 
